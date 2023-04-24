@@ -506,5 +506,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bird
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7858473322563984523, guid: 33f219eccc8174f9c9b0cdfa50b9334d, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858473322563984523, guid: 33f219eccc8174f9c9b0cdfa50b9334d, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1683161796, guid: 33f219eccc8174f9c9b0cdfa50b9334d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 33f219eccc8174f9c9b0cdfa50b9334d, type: 3}

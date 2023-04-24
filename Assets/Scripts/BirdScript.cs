@@ -5,6 +5,8 @@ using UnityEngine;
 public class BirdScript : MonoBehaviour
 {
     Rigidbody2D flappy;
+    float horizontal;
+   
       
 
     // Start is called before the first frame update
@@ -18,7 +20,13 @@ public class BirdScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-          flappy.AddForce(new Vector2(0,1) * 200);
+          flappy.AddForce(new Vector2(0,1) * 300);
         }
+        //movement
+        horizontal = Input.GetAxis("Horizontal");
+
+       
     }
+
+    
 }
