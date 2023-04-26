@@ -37,10 +37,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/PipeScript.cs" />
+     <Compile Include="Assets/Scripts/GameOverScript.cs" />
      <Compile Include="Assets/Scripts/BirdScript.cs" />
      <Compile Include="Assets/Scripts/PipeSpawner.cs" />
      <Compile Include="Assets/Scripts/ScoreKeeperScript.cs" />
-     <Compile Include="Assets/Scripts/GameOverScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Users/game1/Desktop/2020.3.42f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
