@@ -12,17 +12,23 @@ public class PipeSpawner : MonoBehaviour
     public float trickRepeatingTimer = 3.0f;
     float topRandomHight = -3.57f;
     float bottomRandomHight = -10.05f;
+
+    BirdScript scriptBird;
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("SpawnPipes", startingTimer, repeatingTimer); // this is for the method/ function used to start running after a certain amount of time and keep looping depond on how long you want it to be like 3 seconds.
         InvokeRepeating("SpawnTrickPipes", trickStartingTimer, trickRepeatingTimer);
+        scriptBird = GameObject.Find("bird").GetComponent<BirdScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(scriptBird.playerIsStillPlaying == false)
+        {
+            CancelInvoke(); 
+        }
     }
 
     void SpawnPipes()

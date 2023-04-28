@@ -18,7 +18,15 @@ public class PipeScript : MonoBehaviour
         // this makes the pipes move
         transform.Translate(Vector2.left * Time.deltaTime * speed); 
 
-        //destry the pipes off screen
+        //destroy the pipes off screen
         
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Pipe Border/ Pipe Despawner"))
+        {
+           Destroy(gameObject);
+        }
     }
 }
